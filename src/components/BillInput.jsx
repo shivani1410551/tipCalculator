@@ -1,16 +1,14 @@
-import React from "react";
-
-const billInput = ({ billValue, setBillValue }) => {
+const BillInput = ({ billInput, onSetBillInput }) => {
   return (
     <div>
       <p>How much was the bill?</p>
       <input
         type="text"
-        value={billValue}
-        onChange={(e) => setBillValue(Number(e.target.value))}
+        value={billInput}
+        onChange={(e) => onSetBillInput(Number(e.target.value))}
       />
     </div>
   );
 };
 
-export default billInput;
+export default BillInput;

@@ -1,9 +1,9 @@
-const Output = ({ billValue, tip }) => {
+const Output = ({ tip, billInput }) => {
   return (
     <div>
-      <h3>
-        You pay {billValue + tip} (${billValue} + ${tip} tip)
-      </h3>
+      <h1>
+        You pay $({tip}+{billInput}) (${billInput} + ${tip}) tip.
+      </h1>
     </div>
   );
 };
