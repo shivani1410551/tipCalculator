@@ -14,7 +14,7 @@ const Hero = () => {
   }
   return (
     <div>
-      <BillInput billInput={billInput} onsetBillInput={setBillInput} />
+      <BillInput billInput={billInput} onSetBillInput={setBillInput} />
       <SelectPercent percentage={percentage1} onSetPercentage={setPercentage1}>
         How did you like the service?
       </SelectPercent>
